@@ -14,7 +14,7 @@ GIT_REPO_DIR="myDbBackup"
 
 
 #make backup
-cd "$GIT_REPO_DIR"
+cd "../$GIT_REPO_DIR"
 # Check current Git status and update
 ${GIT} status
 ${GIT} pull origin HEAD

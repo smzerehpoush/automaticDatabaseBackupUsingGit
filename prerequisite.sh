@@ -11,7 +11,9 @@ GRANT SELECT,LOCK TABLES, EVENT, TRIGGER, SHOW VIEW  ON *.* TO '"$CRON_USER"'@'l
 FLUSH PRIVILEGES;
 EOF
 
+cd ..
 #clone git repo if not exists
 if [ ! -d "$GIT_REPO_DIR" ] ; then
     git clone "$GIT_REPO_URL" "$GIT_REPO_DIR"
 fi
+
