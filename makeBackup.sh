@@ -8,7 +8,7 @@ MYSQL_DUMP=`which mysqldump`
 GIT=`which git`
 TEMP_BACKUP="latest_backup.sql"
 GIT_REPOSITORY_DIR="myDbBackup"
-BACKUP_DIR=$("$GIT_REPOSITORY_DIR"+date +"%Y/%m")
+BACKUP_DIR=$("$GIT_REPOSITORY_DIR" + date +"%Y/%m")
 
 # Check current Git status and update
 ${GIT} status
