@@ -5,6 +5,7 @@ GIT_REPO_URL="https://github.com/smzerehpoush/myDbBackup.git"
 GIT_REPO_DIR="myDbBackup"
 
 #create a user for backing up data
+echo "enter mysql root password ..."
 mysql -u root -p << EOF
 CREATE USER if not exists '"$CRON_USER"'@'localhost' IDENTIFIED BY '"$CRON_PASS"';
 GRANT SELECT,LOCK TABLES, EVENT, TRIGGER, SHOW VIEW  ON *.* TO '"$CRON_USER"'@'localhost';
