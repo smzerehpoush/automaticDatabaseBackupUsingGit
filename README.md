@@ -1,4 +1,4 @@
-# automacticDatabaseBackupUsingGit
+# automaticDatabaseBackupUsingGit
 a script that automatically backups your mysql database and upload to your git repository<br/>
 just clone the project<br/>
 then run ./prerequisite.sh one time.<br/>
